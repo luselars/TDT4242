@@ -1,5 +1,5 @@
 async function retrieveWorkoutImages(id) {  
-    let workoutData = null;
+    //let workoutData = null;
     let response = await sendRequest("GET", `${HOST}/api/workouts/${id}/`);
     if (!response.ok) {
         let data = await response.json();
